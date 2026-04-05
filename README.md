@@ -1,4 +1,4 @@
-**# Minecraft-SimpleClaim**# 💎 SimpleClaim - The Ultimate Land Protection Suite
+# 💎 SimpleClaim - The Ultimate Land Protection Suite
 
 ![Version](https://img.shields.io/badge/Version-1.0-blue.svg) ![Minecraft](https://img.shields.io/badge/Minecraft-1.21--1.21.11-green.svg) ![Platform](https://img.shields.io/badge/Platform-Paper%20%7C%20Spigot%20%7C%20Bukkit-orange.svg)
 
@@ -55,4 +55,4 @@ We've simplified our system to be elite and easy to manage:
 The plugin generates detailed `config.yml` and `messages.yml` files. You can customize every single message, sound, and visual effect to match your server's brand.
 
 ---
-*Built with ❤️ for professional server owners.*
+*Benjamin Krishan*
