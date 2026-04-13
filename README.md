@@ -55,4 +55,4 @@ We've simplified our system to be elite and easy to manage:
 The plugin generates detailed `config.yml` and `messages.yml` files. You can customize every single message, sound, and visual effect to match your server's brand.
 
 ---
-*Benjamin Krishan*
+*Simple Claim Plugin By - Benjamin Krishan*
