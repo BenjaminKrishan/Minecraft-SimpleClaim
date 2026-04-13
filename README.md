@@ -1,15 +1,22 @@
 # 💎 SimpleClaim - The Ultimate Land Protection Suite
 
-![Version](https://img.shields.io/badge/Version-1.0-blue.svg) ![Minecraft](https://img.shields.io/badge/Minecraft-1.21--1.21.11-green.svg) ![Platform](https://img.shields.io/badge/Platform-Paper%20%7C%20Spigot%20%7C%20Bukkit-orange.svg)
+![Version](https://img.shields.io/badge/Version-1.0-blue.svg) ![Minecraft](https://img.shields.io/badge/Minecraft-1.21--1.21.1-green.svg) ![Platform](https://img.shields.io/badge/Platform-Paper%20%7C%20Spigot%20%7C%20Bukkit-orange.svg)
 
-**SimpleClaim** is a high-performance, cross-platform land claiming solution built for modern Minecraft servers. Experience zero-lag protection with a premium, polished feel.
+**SimpleClaim** is a high-performance, cross-platform land claiming solution built for modern Minecraft servers. Experience zero-lag protection with a premium, polished feel, now optimized with **Spatial Indexing** for enterprise-scale performance.
+
+---
+
+## 🚀 Technical Excellence
+
+### ⚡ **Infinite Scaling (Spatial Indexing)**
+Unlike traditional plugins that slow down as more claims are created, SimpleClaim uses a **Chunk-based Spatial Index**. Lookups occur in **O(1) time**, ensuring your server remains at 20 TPS even with thousands of active claims.
+
+### 🌉 **Adventure API Universal Bridge**
+Built on the **Adventure API**, SimpleClaim runs natively on **Paper** and **Purpur**, while providing a high-performance bridge for **Spigot** and **Bukkit**. One Jar, zero compromises.
 
 ---
 
 ## ✨ Premium Features
-
-### 🚀 **Ultra-Compatible Bridge**
-Built on the **Adventure API**, SimpleClaim runs natively on **Paper** and **Purpur**, while providing a high-performance bridge for **Spigot** and **Bukkit**. One Jar for every server.
 
 ### ☠️ **Advanced Death Chests**
 *   **Holographic Display**: A 3-line floating hologram displays the Owner, the Death Reason, and a Live Countdown.
@@ -17,27 +24,18 @@ Built on the **Adventure API**, SimpleClaim runs natively on **Paper** and **Pur
 *   **Auto-Cleanup**: Fully configurable expiration timers. Once you empty the chest, it vanishes automatically!
 *   **Secure Storage**: Grief-proof, piston-proof, and explosion-proof until the timer runs out.
 
-### 🛡️ **Elite Universal Protection**
+### 🛡️ **Absolute Environmental Protection**
 Simply claiming an area provides immediate, absolute safety for your home and investments:
 *   **Total Immunity**: No damage from PVP, Mobs (PVE), Falling, or Fire while inside a claim.
 *   **Explosion & TNT Proof**: TNT, Creepers, and Fireballs do zero damage to blocks or entities.
 *   **Fire Suppression**: Fire ignition, burning, and spreading are completely disabled in claims.
-*   **Technical Block Lock (Elite)**: 
-    *   **Pistons**: Disabled in the wilderness. They ONLY work if placed inside a claim, stopping "piston-push" griefing.
-    *   **Hoppers & Minecarts**: Automation is locked to claimed territory. Hoppers in the wilderness (including Minecarts) will not move items.
-    *   **Anti-Theft**: Hoppers cannot pull items out of containers (like Chests or Death Chests) across claim boundaries.
+*   **Piston-Push Protection**: Pistons are disabled in the wilderness. They ONLY work if placed inside a claim and cannot push blocks across claim boundaries.
+*   **Technical Block Lock**: Hoppers and Minecarts are restricted to claimed territory to prevent automated theft.
 *   **Animal Sanctuary**: Your cows, sheep, and other animals are 100% safe from both players and mobs.
-*   **No Stolen Items**: Untrusted players cannot open containers or interact with items.
-
-### 🔑 **Streamlined Permissions (Default: False)**
-We've simplified our system to be elite and easy to manage:
-*   `simpleclaim.claim`: Allows creating and resizing claims.
-*   `simpleclaim.deathchest.tp`: Allows using the clickable teleport button.
-*   `simpleclaim.admin`: **The Master Bypass**. Grants absolute power to override protections, access any chest, and bypass all build restrictions. (Default: OP)
 
 ---
 
-## 🛠️ Commands
+## 🛠️ Commands & Permissions
 
 | Command | Description | Permission |
 |:---|:---|:---|
@@ -46,13 +44,21 @@ We've simplified our system to be elite and easy to manage:
 | `/unclaim` | Delete the current claim | `simpleclaim.unclaim` |
 | `/claimlist` | View your active claims | `simpleclaim.claimlist` |
 | `/claimblocks` | Check block balance | `simpleclaim.claimblocks` |
-| `/buyclaimblocks <qty>` | Purchase blocks | `simpleclaim.buyblocks` |
-| `/sellclaimblocks <qty>` | Sell blocks | `simpleclaim.sellblocks` |
+| `/buyclaimblocks <qty>` | Purchase blocks via Economy | `simpleclaim.buyblocks` |
+| `/sellclaimblocks <qty>` | Sell blocks for money | `simpleclaim.sellblocks` |
+| `/deathchest tp <id>` | Teleport to a death chest | `simpleclaim.deathchest.tp` |
+
+**Admin Override**: Use `simpleclaim.admin` for absolute power to bypass all protections and manage any claim.
 
 ---
 
-## 🔧 Configuration
-The plugin generates detailed `config.yml` and `messages.yml` files. You can customize every single message, sound, and visual effect to match your server's brand.
+## 🔧 Installation & Configuration
+
+1.  Place `SimpleClaim.jar` into your `plugins` folder.
+2.  Ensure **Vault** is installed for economy features.
+3.  Restart your server.
+4.  Customize `config.yml` for claim sizes, prices, and settings.
+5.  Customize `messages.yml` for full branding and localization.
 
 ---
-*Simple Claim Plugin By - Benjamin Krishan*
+*Developed for Visual Excellence and Server Stability For By Benjamin Krishan*
